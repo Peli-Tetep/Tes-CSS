@@ -1,3 +1,77 @@
+
 body {
-    background-color: skyblue;
+    margin: 0px;
+    padding: 0px;
+    background: #3b106c url(image/bg.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: hsl(0, 0%, 95%);
+    padding: 5px 10px 5px 10px;
+    
+}
+h1{
+    text-align: center;
+}
+.navbar{
+    background-color: #3b106c;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar a{
+    color: #f2f2f2;
+    margin: 10px;
+    padding: 0% 5% 0% 5%;
+    display: inline-block;
+    transition: 200ms ease;
+}
+
+.navbar a:hover{
+    scale: 1.05;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #f2f2f2;
+}
+
+#main {
+    margin: 5%;
+    padding: 2%;
+    background-color: hsla(0, 0%, 95%, 0.2);
+    border-width: 5px 8px 5px 8px;
+    border-color: #f2f2f2;
+    backdrop-filter: blur(5px);
+    border-style: dotted solid dotted solid;
+    border-radius: 20px;
+}
+
+.maintext1{
+    padding: 0px 0px 20px 0px;
+    font-variant: small-caps;
+}
+
+.maintext2{
+    text-decoration: line-through #3b106c wavy 2px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0px 0px 10px 0px;
+}
+
+.container1{
+    border: 2px solid #f2f2f2;
+    background-color: hsla(0, 0%, 95%, 0.5);
+    outline: 5px dashed #3b106c;
+    outline-style: dashed;
+    outline-offset: 10px;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: justify;
+
+}
+footer{
+    background-color: pink;
 }
