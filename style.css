@@ -1,77 +1,252 @@
-
-body {
-    margin: 0px;
-    padding: 0px;
-    background: #3b106c url(image/bg.jpg);
-    background-size: cover;
+html, body{
+    margin: 0;
+    padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-    background-color: hsl(0, 0%, 95%);
-    padding: 5px 10px 5px 10px;
-    
+body{
+    background-color: aquamarine;
 }
-h1{
+
+#main{
+    background-color: white;
+    margin: 20px;
+    padding: 0px 10px 0px 10px; 
+}
+
+#main > .container1 > h2{
+    background-color: coral;
+}
+
+#main > .container1 > h3{
+    background-color: burlywood;
+}
+.container1{
+    background-color: azure;
+}
+
+.contoh{
+    background-color: blue;
+    margin: 0px 25px 0px 25px; 
+    padding: 10px;
+}
+
+.kode, .hasil{
+    background-color: white;
+    margin: 10px 15px 10px 15px;
+    padding: 10px; 
+}
+
+header{
+    background-color: pink;
+}
+
+/*INI UNTUK CONTOH STYLE*/
+
+.hasil2{
+    background-color: red;
+}
+.hasil2 h1{
+    color: blue;
+}
+.hasil2 p{
+    color: yellow;
+}
+
+#para1 {
+    color: red;
+    background-color: blue;
     text-align: center;
 }
-.navbar{
-    background-color: #3b106c;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.navbar a{
-    color: #f2f2f2;
-    margin: 10px;
-    padding: 0% 5% 0% 5%;
-    display: inline-block;
-    transition: 200ms ease;
+
+.para2 {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
 }
 
-.navbar a:hover{
-    scale: 1.05;
-    font-weight: bold;
-    text-shadow: 0px 0px 5px #f2f2f2;
+.para3{
+    font-size: 30px;
 }
 
-#main {
-    margin: 5%;
-    padding: 2%;
-    background-color: hsla(0, 0%, 95%, 0.2);
-    border-width: 5px 8px 5px 8px;
-    border-color: #f2f2f2;
-    backdrop-filter: blur(5px);
-    border-style: dotted solid dotted solid;
-    border-radius: 20px;
+.hasil3  *{
+    color: purple;
+    text-align: center;
 }
 
-.maintext1{
-    padding: 0px 0px 20px 0px;
-    font-variant: small-caps;
+.hasil4 h1, .hasil4 p{
+    color: red;
 }
 
-.maintext2{
-    text-decoration: line-through #3b106c wavy 2px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding: 0px 0px 10px 0px;
+.hasil5{
+    background-color: yellow;
 }
 
-.container1{
-    border: 2px solid #f2f2f2;
-    background-color: hsla(0, 0%, 95%, 0.5);
-    outline: 5px dashed #3b106c;
-    outline-style: dashed;
-    outline-offset: 10px;
-    margin: 20px 0px 20px 0px;
-    padding: 10px;
-    max-height: 100%;
-    max-width: 100%;
-    text-align: justify;
+
+.hasil6{
+    background-image: url(image/bg.jpg);
+    background-size: 50px;
+}
+.hasil6 p{
+    color: white;
+}
+
+.hasil7{
+    background-image: url(image/bg.jpg);
+    background-size: 50px;
+    background-repeat: repeat-x;
+}
+.hasil7 p{
+    color: white;
+}
+
+.hasil8{
+    background-image: url(image/bg.jpg);
+    background-size: 50px;
+    background-repeat: repeat-y;
+}
+.hasil8 p{
+    color: white;
+}
+
+.hasil9{
+    background-image: url(image/bg.jpg); 
+    background-size: 50px; 
+    background-repeat: no-repeat; 
+    background-position: right top;
+}
+
+.hasil10{
+    background-image: url(image/bg.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.hasil10 p{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hasil11{
+    height: 100px;
+    overflow-y: scroll;
+    background-image: url(image/bg.jpg); 
+    background-size: 70px; 
+    background-repeat: no-repeat; 
+    background-position: right top;
+    background-attachment: scroll;
+}
+
+.hasil12{
+    height: 100px;
+    overflow-y: scroll;
+    background-image: url(image/bg.jpg); 
+    background-size: 70px; 
+    background-repeat: no-repeat; 
+    background-position: right top;
+    background-attachment: local;
+}
+
+.hasil13{
+    background: black url(image/bg.jpg) no-repeat right top / 70px;
+}
+.hasil13 p{
+    color: white;
+}
+
+.hasil14 p{
+    border: 2px solid red;
+}
+
+.hasil15 p{
+    border-top: 5px solid red;
+    border-left: 7px dotted blue;
+    border-bottom: 3px dashed yellow;
+    border-right: 4px double green;
+}
+
+.hasil16 p{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.hasil17 p{
+    background-color: yellow;
+    margin : 20px 10px 30px 40px;
+}
+
+.hasil18 p {
+    width: 300px;
+    border: 2px solid red;
+    margin: auto;
+}
+
+.hasil19{
+    width: 300px;
+    border: 2px solid red;
+    margin-left: 100px;
 
 }
-footer{
-    background-color: pink;
+
+.hasil20{
+    margin: inherit;
+}
+
+.hasil21 p{
+    background-color: yellow;
+    padding : 20px 10px 30px 40px;
+}
+
+.hasil22 p{
+    background-color: yellow;
+    width: 300px;
+    padding : 20px;
+}
+
+.hasil23 p{
+    background-color: yellow;
+    width: 300px;
+    padding : 20px;
+    box-sizing: border-box;
+}
+
+.hasil24 p{
+    background-color: red;
+    height: auto;
+    width: 50%;
+}
+
+.hasil25 p{
+    border: 2px solid ;
+    outline : 5px solid red;
+}
+
+.hasil26 p{
+    border: 2px solid ;
+    outline : 5px solid red;
+    outline-offset: 5px;
+}
+
+.hasil27 p{
+    color: white;
+    background-color: black;
+}
+
+.hasil28 p{
+    text-align: center;
+}
+
+.hasil29 p{
+    text-align-last: right;
+}
+
+.hasil30 p{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.hasil31 img {
+    vertical-align: text-top;
+}
+
+.hasil32 p {
+    text-decoration-line: overline underline line-through;
 }

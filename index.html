@@ -1,34 +1,242 @@
-<html>
+<html lang="id">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>
-            Heyyo
+            Tes CSS
         </title>
         <link rel="icon" type="image/x-icon" href="icon.png">
+        <style>
+            .hasil1{background-color: yellow;}
+            .hasil1 h1{color: red;}
+            .hasil1 p{color: blue;}
+        </style>
     </head>
     <body>
         <header>
-            <h1>Header 1</h1>
+            <h1>Latihan CSS</h1>
             <nav class="navbar">
-                <a href="">Link 1</a>
-                <a href="">Link 2</a>
-                <a href="">Link 3</a>
+                <a href="index.html">Page 1</a>
+                <a href="page2.html">Page 2</a>
+                <a href="">Page 3</a>
             </nav>
         </header>
         
+
         <div id="main">
-            <p class="maintext2">Halo Hee<a href=link1.html target="_blank">e</a>eeey</p>
-            <p class="maintext1">Halo Hee<a href=link1.html target="_blank">e</a>eeey</p>
 
             <div class="container1">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur quisquam, voluptates aperiam temporibus sit fuga ut facilis ad ex? Quaerat sed incidunt sapiente excepturi deleniti fuga cumque, accusamus velit?</p>
+                <h2>Dasar-dasarnya</h2>
+                <ul>
+                    <li>Selector : &lt;html&gt;, &lt;body&gt;, &lt;h1&gt;, &lt;p&gt;, dsb </li>
+                    <li>Declaration : {color:red; background-color:blue; font-size:50px;}</li>
+                    <li>Property : color, background-color, font-size, dsb</li>
+                    <li>Value : red, blue, 50px, dsb</li>
+                </ul>
+
+                <h3>1. Inline CSS</h3>
+                <p>Diletakan di selectornya langsung.</p>
+                <div class="contoh">
+                    <h4>Contoh 1:</h4>
+                    <div class="kode">
+                        &lt;h4 style="color:red;"&gt;Heading merah&lt;/h4&gt;
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil">
+                        <h3 style="color:red;">Heading merah</h3>
+                    </div>
+                    <h4>Contoh 2:</h4>
+                    <div class="kode">
+                    &lt;p&gt;style="color:blue;"&gt;Paragraf biru. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit ea ullam totam impedit provident amet quasi quis quam atque officiis, aperiam obcaecati repellat laboriosam deserunt labore dolorem laudantium! Necessitatibus.&lt;/p&gt;
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil">
+                        <p style="color:blue;">Paragraf biru. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et odit ea ullam totam impedit provident amet quasi quis quam atque officiis, aperiam obcaecati repellat laboriosam deserunt labore dolorem laudantium! Necessitatibus.</p>
+                    </div>   
+                </div>
+
+                <h3>2. Internal CSS</h3> <!-- class = hasil1-->
+                <p>Diletakan di &lt;head&gt;.</p>
+                <div class="contoh">
+                    <h4>Contoh:</h4>
+                    <div class="kode">
+                        &lt;style&gt;<br>
+                            &emsp;body{background-color:yellow;} <br>
+                            &emsp;h1{color:red;} <br>
+                            &emsp;p{color:blue;} <br>
+                        &lt;/style&gt;
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil1">
+                        <h1>Header merah</h1>
+                        <p>Paragraf biru.</p>
+                    </div>  
+                </div>
+
+                <h3>3. External CSS</h3> <!-- class = hasil2-->
+                <p>Diletakan di file khusus CSS (.css), dan diletakan pada &lt;head&gt;.</p>
+                <div class="contoh">
+                    <h4>Contoh:</h4>
+                    <div class="kode">
+                        &lt;link rel="stylesheet" href="style.css"&gt; <br>
+                        <br>
+                        dengan isi file css sebagai berikut :<br>
+                        &emsp;body{background-color: red;}<br>
+                        &emsp;h1{color: blue;}<br>
+                        &emsp;p{color: yellow;}
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil2">
+                        <h1>Header merah</h1>
+                        <p>Paragraf biru.</p>
+                    </div>  
+                </div>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe rem sint sunt tenetur. Nobis, quas facere natus exercitationem ipsa quos neque et voluptas dolore sed veniam expedita quia. Sapiente.</p>
+                <p>Ketiga ini bisa digunakan bersamaan, tetapi tergantung posisi.</p> 
+                <p>Urutan teratas akan dijalankan dulu, lalu ditutupi oleh urutan kedua, dan begitu seterusnya</p>
+            </div>
+
+            <div class="container1">
+                <h2>Selectors</h2>
+
+                <h3>1. Element Selector</h3>
+                <div class="contoh">
+                    <h4>Contoh:</h4>
+                    <div class="kode">
+                        p {<br>
+                        &emsp;color: red;<br>
+                        &emsp;background-color: blue<br>
+                        &emsp;text-align : center;<br>
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil3">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias tempora numquam, vitae maxime corporis earum voluptate! Accusantium rem unde ex eos facere, numquam iste doloribus veritatis dolorem at, soluta maxime..</p>
+                    </div>  
+                </div>
+
+                <h3>2. Id Selector</h3> <!--id = para1, class = hasil3 -->
+                <div class="contoh">
+                    <h4>Contoh:</h4>
+                    <div class="kode">
+                        &lt;p id="para1"&gt; <br>
+                        <br>
+                        dengan kode stylenya: <br>
+                        #para1 {<br>
+                        &emsp;color: red;<br>
+                        &emsp;background-color: blue<br>
+                        &emsp;text-align : center;<br>
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil">
+                        <p id="para1" class="hasil">Paragraf ber-id</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias tempora numquam, vitae maxime corporis earum voluptate! Accusantium rem unde ex eos facere, numquam iste doloribus veritatis dolorem at, soluta maxime..</p>
+                    </div>  
+                </div>
+
+                <h3>3. Class Selector</h3>
+                <div class="contoh">
+                    <h4>Contoh 1:</h4>
+                    <div class="kode">
+                        &lt;p class="para2"&gt; <br>
+                        <br>
+                        dengan kode stylenya: <br>
+                        .para2 {<br>
+                        &emsp;color: blue;<br>
+                        &emsp;background-color: yellow<br>
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil3">
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam porro atque, possimus aliquid accusantium necessitatibus autem soluta qui sapiente perferendis! Eveniet dolorum repudiandae natus minima velit quas facere quibusdam!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias tempora numquam, vitae maxime corporis earum voluptate! Accusantium rem unde ex eos facere, numquam iste doloribus veritatis dolorem at, soluta maxime..</p>
+                    </div>  
+
+                    <h4>Contoh 2:</h4>
+                    <div class="kode">
+                        &lt;h1 class="para2"&gt; <br>
+                        <br>
+                        &lt;p class="para2"&gt; <br>
+                        <br>
+                        dengan kode stylenya: <br>
+                        .p para2 {<br>
+                        &emsp;color: blue;<br>
+                        &emsp;background-color: yellow<br>
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil3">
+                        <h1>Header</h1>
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam porro atque, possimus aliquid accusantium necessitatibus autem soluta qui sapiente perferendis! Eveniet dolorum repudiandae natus minima velit quas facere quibusdam!</p>
+                    </div>  
+
+                    <h4>Contoh 3:</h4>
+                    <div class="kode">
+                        &lt;p class="para2"&gt; <br>
+                        <br>
+                        &lt;p class="para2 para3"&gt; <br>
+                        <br>
+                        dengan kode stylenya: <br>
+                        .para2 {<br>
+                        &emsp;color: blue;<br>
+                        &emsp;background-color: yellow<br>
+                        }<br>
+                        .para3 {<br>
+                            &emsp;font-size: 50px;
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil">
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam porro atque, possimus aliquid accusantium necessitatibus autem soluta qui sapiente perferendis! Eveniet dolorum repudiandae natus minima velit quas facere quibusdam!</p>
+                        <p class="para2 para3">Paragraf 3</p>
+                    </div>  
+                </div>
+
+                <h3>4. Universal Selectors</h3>
+                <div class="contoh">
+                    <h4>Contoh 1:</h4>
+                    <div class="kode">
+                        &lt;h1&gt;Header&lt;/h1&gt; <br>
+                        &lt;p&gt;Bakal ngubah semua yang ada disini&lt;/p&gt; <br>
+                        <br>
+                        dengan kode stylenya: <br>
+                        * {<br>
+                        &emsp;color: blueviolet;<br>
+                        &emsp;text-align: center;<br>
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil3">
+                        <h1>Header</h1>
+                        <p>Bakal ngubah semua yang ada disini</p>
+                    </div>  
+                </div>
+
+                <h3>5. Groupping Selectors</h3>
+                <div class="contoh">
+                    <h4>Contoh 1:</h4>
+                    <div class="kode">
+                        &lt;h1&gt;Header&lt;/h1&gt; <br>
+                        &lt;p&gt;Bakal ngubah semua yang ada disini&lt;/p&gt; <br>
+                        <br>
+                        dengan kode stylenya: <br>
+                        *h1, p {<br>
+                        &emsp;color: red;<br>
+                        }
+                    </div>
+                    <h4>Hasilnya:</h4>
+                    <div class="hasil hasil4">
+                        <h1>Header</h1>
+                        <p>Bakal ngubah semua yang ada disini</p>
+                    </div>  
+                </div>
             </div>
         </div>
+
         <footer>
+            <button class="next"><a href="page2.html">Next</a></button>
             <p>&copy; felisia t</p>
         </footer>
     </body>
